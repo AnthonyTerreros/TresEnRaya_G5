@@ -37,6 +37,23 @@ public class TreeNode<T> {
     public void addChild(T content) {
         this.children.add(new Tree(content));
     }
+    
+    
+    public void addChild(Tree newTree) {
+        this.children.add(newTree);
+    }
 
+    public int getUtility() {
+        return utility;
+    }
+
+    public void setUtility(int utility) {
+        this.utility = utility;
+    }
+    
+    @Override
+    public String toString() {
+        return content.toString();
+    }
     
 }
