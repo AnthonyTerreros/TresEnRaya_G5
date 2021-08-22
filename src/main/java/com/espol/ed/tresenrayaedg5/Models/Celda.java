@@ -1,5 +1,6 @@
 package com.espol.ed.tresenrayaedg5.Models;
 
+import com.espol.ed.tresenrayaedg5.VentanaGameController;
 import javafx.geometry.Pos;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;

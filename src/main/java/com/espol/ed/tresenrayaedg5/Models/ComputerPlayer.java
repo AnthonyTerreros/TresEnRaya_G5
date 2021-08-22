@@ -7,6 +7,7 @@ package com.espol.ed.tresenrayaedg5.Models;
 
 import com.espol.ed.tresenrayaedg5.TDAs.Tree;
 import com.espol.ed.tresenrayaedg5.TDAs.TreeNode;
+import com.espol.ed.tresenrayaedg5.VentanaGameController;
 import java.util.List;
 import java.util.PriorityQueue;
 

@@ -1,4 +1,12 @@
-com\espol\ed\tresenrayaedg5\SecondaryController.class
+com\espol\ed\tresenrayaedg5\VentanaPrincipalController.class
+com\espol\ed\tresenrayaedg5\TDAs\TreeNode.class
+com\espol\ed\tresenrayaedg5\Models\TresEnRaya.class
+com\espol\ed\tresenrayaedg5\TDAs\Tree.class
+com\espol\ed\tresenrayaedg5\Models\ComputerPlayer.class
+com\espol\ed\tresenrayaedg5\VentanaGameController.class
+com\espol\ed\tresenrayaedg5\Models\Tablero.class
 module-info.class
 com\espol\ed\tresenrayaedg5\App.class
-com\espol\ed\tresenrayaedg5\PrimaryController.class
+com\espol\ed\tresenrayaedg5\Models\Celda.class
+com\espol\ed\tresenrayaedg5\Models\Status.class
+com\espol\ed\tresenrayaedg5\Models\HumanPlayer.class
