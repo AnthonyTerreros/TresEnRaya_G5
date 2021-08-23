@@ -1,11 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.espol.ed.tresenrayaedg5.VentanaPrincipalController">
-    
-</AnchorPane>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.espol.ed.tresenrayaedg5.VentanaPrincipalController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Tres En Raya">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="600.0">
+         <children>
+            <Label text="&gt; Seleccione un Jugador &lt;">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="71.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="X" textFill="#ffbf00">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <RadioButton mnemonicParsing="false" text="Player" fx:id="xPlayer">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tgPlayer" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Y" textFill="#0088ff">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="yPlayer" mnemonicParsing="false" text="Player" toggleGroup="$tgPlayer">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="600.0">
+         <children>
+            <Label text="¿Quién Comienza?">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="600.0" spacing="25.0">
+         <children>
+            <RadioButton fx:id="startHuman" mnemonicParsing="false" text="Human">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgEmpezar" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="startComputer" mnemonicParsing="false" text="Computer" toggleGroup="$tgEmpezar">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="78.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnIniciar" mnemonicParsing="false" onAction="#empezarPartida" style="-fx-font-size: 18; -fx-background-color: #5cb65f; -fx-text-fill: white; -fx-font-weight: bold;" text="Comenzar Partida" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
