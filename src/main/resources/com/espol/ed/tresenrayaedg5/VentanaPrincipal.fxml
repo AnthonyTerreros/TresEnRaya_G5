@@ -32,9 +32,9 @@
          <children>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Label text="X" textFill="#ffbf00">
+                  <Label text="X" textFill="#1090f2">
                      <font>
-                        <Font name="System Bold" size="36.0" />
+                        <Font name="System Bold" size="48.0" />
                      </font>
                   </Label>
                   <RadioButton mnemonicParsing="false" text="Player" fx:id="xPlayer">
@@ -49,9 +49,9 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Label text="Y" textFill="#0088ff">
+                  <Label text="O" textFill="#ffb600">
                      <font>
-                        <Font name="System Bold" size="36.0" />
+                        <Font name="System Bold" size="48.0" />
                      </font>
                   </Label>
                   <RadioButton fx:id="yPlayer" mnemonicParsing="false" text="Player" toggleGroup="$tgPlayer">
@@ -89,9 +89,10 @@
             </RadioButton>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="78.0" prefWidth="600.0">
+      <HBox alignment="CENTER" prefHeight="78.0" prefWidth="600.0" spacing="20.0">
          <children>
             <Button fx:id="btnIniciar" mnemonicParsing="false" onAction="#empezarPartida" style="-fx-font-size: 18; -fx-background-color: #5cb65f; -fx-text-fill: white; -fx-font-weight: bold;" text="Comenzar Partida" />
+            <Button fx:id="btnIniciar1" mnemonicParsing="false" onAction="#empezarPartida" style="-fx-font-size: 18; -fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold;" text="Salir" />
          </children>
       </HBox>
    </children>

@@ -2,6 +2,7 @@ package com.espol.ed.tresenrayaedg5.Models;
 
 import com.espol.ed.tresenrayaedg5.Models.ComputerPlayer;
 import com.espol.ed.tresenrayaedg5.Models.HumanPlayer;
+import com.espol.ed.tresenrayaedg5.VentanaPrincipalController;
 import javafx.geometry.Pos;
 import javafx.scene.layout.GridPane;
 
@@ -17,10 +18,15 @@ public class TresEnRaya {
     private ComputerPlayer computerPlayer;
     private HumanPlayer humanPlayer;
     
-    private TresEnRaya(){
-        tablero = new Tablero(3,3);
-        computerPlayer = new ComputerPlayer();
-        humanPlayer = new HumanPlayer();
+    private TresEnRaya() {
+        tablero = new Tablero(3, 3);
+        if (VentanaPrincipalController.primerJugador) {
+            humanPlayer = new HumanPlayer('X');
+            computerPlayer = new ComputerPlayer('O');
+        } else {
+            computerPlayer = new ComputerPlayer();
+            humanPlayer = new HumanPlayer();
+        }
     }
 
     public static TresEnRaya getTresEnRaya() {
@@ -36,6 +42,7 @@ public class TresEnRaya {
     */
     public void init(){
         contenedor = new GridPane();
+        contenedor.getChildren().clear();
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
                 tablero.getCeldas()[i][j] = new Celda(i,j);

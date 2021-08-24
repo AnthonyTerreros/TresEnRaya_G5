@@ -1,5 +1,6 @@
 package com.espol.ed.tresenrayaedg5;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -25,7 +26,9 @@ public class VentanaPrincipalController implements Initializable {
     public RadioButton startComputer;
     
     
-    public static String primerJugador;
+    public static boolean primerJugador;
+    public static boolean comienzaIt;
+    
     /**
      * Initializes the controller class.
      */
@@ -35,16 +38,23 @@ public class VentanaPrincipalController implements Initializable {
     }
     
     @FXML
-    public void empezarPartida(ActionEvent e){
-        if(xPlayer.isSelected()){
-            primerJugador = "";
+    public void empezarPartida(ActionEvent e) {
+        if (xPlayer.isSelected()) {
+            primerJugador = true;
+        }else{
+            primerJugador = false;
         }
-        
-        if(yPlayer.isSelected()){
-            
+        if (startComputer.isSelected()) {
+            comienzaIt = true;
+        }else{
+            comienzaIt = false;
         }
-        
+        try {
+            App.setRoot("VentanaGame");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
-    
+
     
 }

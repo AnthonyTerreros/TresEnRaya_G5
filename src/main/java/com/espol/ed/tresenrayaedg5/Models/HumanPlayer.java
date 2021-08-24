@@ -14,7 +14,11 @@ public class HumanPlayer {
     public final char jugador;
     
     public HumanPlayer(){
-        jugador = 'O';
+        this.jugador = 'O';
+    }
+    
+    public HumanPlayer(char establecerJugador){
+        this.jugador = establecerJugador;
     }
 
     public char getJugador() {

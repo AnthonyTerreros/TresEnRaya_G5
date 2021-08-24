@@ -25,8 +25,9 @@ public class ComputerPlayer {
         tableroGame = TresEnRaya.getTablero();
     }
     
-    public ComputerPlayer(char jugador){
-        this.jugador = jugador;
+    public ComputerPlayer(char establecerJugador){
+        this.jugador = establecerJugador;
+        tableroGame = TresEnRaya.getTablero();
     }
     
     public char getJugador() {
