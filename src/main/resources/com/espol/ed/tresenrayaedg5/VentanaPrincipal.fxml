@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.espol.ed.tresenrayaedg5.VentanaPrincipalController">
+<VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.espol.ed.tresenrayaedg5.VentanaPrincipalController">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
@@ -92,7 +92,16 @@
       <HBox alignment="CENTER" prefHeight="78.0" prefWidth="600.0" spacing="20.0">
          <children>
             <Button fx:id="btnIniciar" mnemonicParsing="false" onAction="#empezarPartida" style="-fx-font-size: 18; -fx-background-color: #5cb65f; -fx-text-fill: white; -fx-font-weight: bold;" text="Comenzar Partida" />
-            <Button fx:id="btnIniciar1" mnemonicParsing="false" onAction="#empezarPartida" style="-fx-font-size: 18; -fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold;" text="Salir" />
+            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#close" style="-fx-font-size: 18; -fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold;" text="Salir" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="message" textFill="#e81268">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
          </children>
       </HBox>
    </children>
